@@ -16,7 +16,7 @@ Node {
 
             // To run Maven on a Windows agent, use
             // bat "mvn -Dmaven.test.failure.ignore=true clean package"
-			buildInfo = rtMaven.run pom: 'pom.xml', goals: 'clean package'
+			buildInfo = rtMaven.run pom: 'trucks/pom.xml', goals: 'clean package'
          }
 
          post {
