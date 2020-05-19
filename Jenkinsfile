@@ -10,7 +10,7 @@ pipeline {
       stage('Build') {
          steps {
             // Get some code from a GitHub repository
-            git credentialsId: '6e176ef1-5ba5-4d9d-9a6f-cf9ae261fa8e', url: 'https://github.com/charan1987/maven456/tree/master/trucks'
+            git credentialsId: '6e176ef1-5ba5-4d9d-9a6f-cf9ae261fa8e', url: 'https://github.com/charan1987/maven456.git'
 
             // Run Maven on a Unix agent.
             //sh "mvn -Dmaven.test.failure.ignore=true clean package"
