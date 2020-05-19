@@ -14,7 +14,7 @@ node {
         // if (isUnix()) {
          //   sh '"$MVN_HOME/bin/mvn"  pom: 'trucks/pom.xml' -Dmaven.test.failure.ignore clean package'
          //} else {
-            bat(/"%MVN_HOME%\bin\mvn" pom: 'trucks/pom.xml' -Dmaven.test.failure.ignore clean package/)
+            bat(/"%MVN_HOME%\bin\mvn" trucks/pom.xml -Dmaven.test.failure.ignore clean package/)
        //  }
       }
    }
